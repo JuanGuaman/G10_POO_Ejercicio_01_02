@@ -14,6 +14,7 @@ public class empleado
     int horasTrabajadas;
     double costoHora;
     int anioIngreso;
+    int auto;
 
     public double calcularIngreso(int anioActual)
     {
