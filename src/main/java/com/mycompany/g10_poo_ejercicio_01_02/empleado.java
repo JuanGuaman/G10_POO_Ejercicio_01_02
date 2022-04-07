@@ -17,19 +17,30 @@ public class empleado
 
     public double calcularIngreso(int anioActual)
     {
-        
+        double result;
+        double totalCosto;
+        double extra;
+        int yearsTrabajados;
+        totalCosto = this.horasTrabajadas*this.costoHora;
+        yearsTrabajados = anioActual-this.anioIngreso;
+        extra = yearsTrabajados * 1.02;
+        result = totalCosto * extra;
+        return result;
     }
     public double   calcularBonoHorasExtra(int maximoHorasTrabjadas)
     {
-        
+        double result =0;
+        return result;
     }
     public double calcularImpuesto(int limite1, int limite2, int limite3)
     {
-        
+        double result =0;
+        return result;
     }
     public double calcularAPagar()
     {
-        
+        double result =0;
+        return result;
     }
 }
 
