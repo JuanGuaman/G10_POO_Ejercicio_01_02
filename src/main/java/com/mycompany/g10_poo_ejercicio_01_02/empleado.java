@@ -30,7 +30,7 @@ public class empleado
     }
     public double   calcularBonoHorasExtra(int maximoHorasTrabjadas)
     {
-        double result =0;
+        double result =1;
         return result;
     }
     public double calcularImpuesto(int limite1, int limite2, int limite3)
