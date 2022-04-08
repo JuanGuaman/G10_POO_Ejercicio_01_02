@@ -29,7 +29,7 @@ public class G10_POO_Ejercicio_01_02
         System.out.print("Ingresos: " + empleado1.calcularIngreso(anioActual));
         
         System.out.println("  ");
-        
+        ;;;;;;;
         
         var costoImpuesto=1000d;
         costoImpuesto=empleado1.calcularImpuesto(500, 1000, 2000);
