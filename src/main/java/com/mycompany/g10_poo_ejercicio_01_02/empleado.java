@@ -35,8 +35,38 @@ public class empleado
     }
     public double calcularImpuesto(int limite1, int limite2, int limite3)
     {
-        double result =1;
-        return result;
+        double resultado = 0;
+        double totalPago=this.costoHora*this.horasTrabajadas;
+        
+        double ingreso = this.calcularIngreso(anioIngreso);
+        
+        
+        if(ingreso <= limite1){
+            resultado=0;
+        }else{
+            if(ingreso > limite1 && ingreso <= limite2){
+                resultado=(5*totalPago)/100;
+            }else{
+                if(ingreso>limite2 && ingreso <= limite3){
+                    resultado=(12*totalPago)/100;
+                }else{
+                    if(ingreso>limite3){
+                        resultado=(25*totalPago)/100;
+                    }
+                }
+            }
+           
+        }
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        return ingreso;  
     }
     public double calcularAPagar()
     {
