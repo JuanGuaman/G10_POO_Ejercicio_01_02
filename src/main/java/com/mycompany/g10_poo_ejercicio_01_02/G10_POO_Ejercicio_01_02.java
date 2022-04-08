@@ -13,6 +13,9 @@ public class G10_POO_Ejercicio_01_02
     public static void main(String[] args)
     {
         int anioActual = 2022;
+        int limite1=500;
+        int limite2=1000;
+        int limite3=2000;
         var empleado1 = new empleado();
         empleado1.anioIngreso=2003;
         empleado1.costoHora=11.5;
@@ -24,6 +27,17 @@ public class G10_POO_Ejercicio_01_02
         System.out.print("Año actual: 2022 ");
         
         System.out.print("Ingresos: " + empleado1.calcularIngreso(anioActual));
+        
+        System.out.println("  ");
+        
+        
+        var costoImpuesto=1000d;
+        costoImpuesto=empleado1.calcularImpuesto(500, 1000, 2000);
+        System.out.println("Valor del impuesto a pagar: " + costoImpuesto);
+        
+        
+        
+        
     }
         
     
